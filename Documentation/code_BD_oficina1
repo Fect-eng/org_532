@@ -1,0 +1,50 @@
+CREATE TABLE buro_6 (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    pid VARCHAR(20),
+    base VARCHAR(200),
+    cargo VARCHAR(200),
+    gerencia VARCHAR(200),
+    nombres VARCHAR(200),
+    dni VARCHAR(30),
+    telefono VARCHAR(200),
+    profesion VARCHAR(200),
+    lugar_DNI VARCHAR(100),
+    obs VARCHAR(255),
+    inicio_usr VARCHAR(200),
+    cese_usr VARCHAR(200),
+    record_laboral VARCHAR(254),
+    planeam_presupues VARCHAR(254),
+    fecha_ingre DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+); 
+// planeamiento presupuesto
+nro
+base
+cargo
+profesion
+nombres
+dni
+telefono
+inicio		Agregar
+cese		Agregar
+record laboral  Agregar
+Modificar esto hoy 21 - //// ok -- 
+
+INSERT INTO buro_7 (pid, base, cargo, gerencia, nombres, dni, telefono, profesion, lugar_DNI, obs, inicio_usr, cese_usr, record_laboral)
+VALUES 
+('0', 'Base1', 'Cargo1', 'Gerencia1', 'Nombre1', '123456789', '987654321', 'Profesion1', 'Lugar1', 'Obs1', '2023-01-01', '2023-12-31', 'Record_Laboral_1'),
+('1', 'Base2', 'Cargo2', 'Gerencia2', 'Nombre2', '987654321', '123456789', 'Profesion2', 'Lugar2', 'Obs2', '2023-02-01', '2023-11-30', 'Record_Laboral_2'),
+('2', 'Base3', 'Cargo3', 'Gerencia3', 'Nombre3', '111222333', '555666777', 'Profesion3', 'Lugar3', 'Obs3', '2023-03-01', '2023-10-31', 'Record_Laboral_3');
+
+
+https://wicked-exchanger.000webhostapp.com/
+
+
+https://docs.google.com/forms/d/e/1FAIpQLSdo0Amq1aUtUuseZsd6nQ9nriAuC6Yjh0fZa4JtJJwi2LGysw/viewform
+
+
+INSERT INTO buro_34 (pid, base, cargo, gerencia, nombres, dni, telefono, profesion, lugar_DNI, obs, inicio_usr, cese_usr, record_laboral, planeam_presupues)
+VALUES 
+('0', 'Base1', 'Cargo1', 'Gerencia1', 'Nombre1', '123456789', '987654321', 'Profesion1', 'Lugar1', 'Obs1', '2023-01-01', '2023-12-31', 'Record_Laboral_1', 'dfsasadsad'),
+('1', 'Base2', 'Cargo2', 'Gerencia2', 'Nombre2', '987654321', '123456789', 'Profesion2', 'Lugar2', 'Obs2', '2023-02-01', '2023-11-30', 'Record_Laboral_2', 'dfsasadsad'),
+('2', 'Base3', 'Cargo3', 'Gerencia3', 'Nombre3', '111222333', '555666777', 'Profesion3', 'Lugar3', 'Obs3', '2023-03-01', '2023-10-31', 'Record_Laboral_3', 'dfsasadsad');

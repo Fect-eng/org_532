@@ -1,0 +1,47 @@
+<?php
+// Conecta a la base de datos
+$conn = new mysqli('localhost', 'root', '', 'rol');
+
+// Verifica la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Consulta para obtener datos
+$query = "SELECT id, base, cargo, gerencia FROM org_data";
+$result = $conn->query($query);
+
+$data = [
+    ["id" => 1, "name" => "Nodo 1", "title" => "Título 1", "pid" => 0],
+    ["id" => 2, "name" => "Nodo 2", "title" => "Título 2", "pid" => 1],
+    ["id" => 3, "name" => "Nodo 3", "title" => "Título 3", "pid" => 1],
+    ["id" => 4, "name" => "Nodo 4", "title" => "Título 4", "pid" => 2],
+    ["id" => 5, "name" => "Nodo 5", "title" => "Título 5", "pid" => 2],
+];
+
+// Devolver los datos como JSON
+echo json_encode($data);
+?>
+
+/**
+ id 
+base
+cargo
+gerencia
+nombres
+dni
+telefono
+profesion
+lugar_DNI
+obs
+
+Contraseña
+@FasterMemory1
+
+ID usuario
+adimiroereajhansburggo@gmail.com
+
+0
+
+Name = id21764780_managdb_pr
+Username = id21764780_managdb_pr_usrn   ---- para ingresara la DB */

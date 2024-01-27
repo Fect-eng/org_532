@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /juego_login/Admin/Oficina_1/
+
+    # Redirige todas las solicitudes a index.php si el archivo o directorio no existe
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?q=$1 [QSA,L]
+</IfModule>
