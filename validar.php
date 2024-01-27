@@ -20,7 +20,8 @@ if($filas['id_cargo']==1){ //administrador
 
 }else
 if($filas['id_cargo']==2){ //cliente
-header("location:cliente.php");
+header("location:Client/Oficina_1/index.php");
+// header("location:cliente.php"); prueba exitosa
 }
 else{
     ?>
