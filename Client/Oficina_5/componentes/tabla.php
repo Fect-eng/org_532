@@ -30,8 +30,7 @@
 				<td>Inicio Usuario</td>
 				<td>Cese Usuario</td>
 				<td>Record Laboral</td>
-				<td>Editar</td>
-				<td>Eliminar</td>
+
 			</tr>
 
 			<?php 
@@ -63,9 +62,7 @@
 						   $ver[7]."||".
 						   $ver[8]."||".
 						   $ver[9]."||".
-						   $ver[10]."||".
-						   $ver[11]."||".
-						   $ver[12];
+						   $ver[10];
 			 ?>
 
 			<tr>
@@ -82,17 +79,7 @@
 				<td><?php echo $ver[10] ?></td>
 				<td><?php echo $ver[11] ?></td>
 				<td><?php echo $ver[12] ?></td>
-				<td>
-					<button class="btn btn-warning glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modalEdicion" onclick="agregaform('<?php echo $datos ?>')">
-						
-					</button>
-				</td>
-				<td>
-					<button class="btn btn-danger glyphicon glyphicon-remove" 
-					onclick="preguntarSiNo('<?php echo $ver[0] ?>')">
-						
-					</button>
-				</td>
+				
 			</tr>
 			<?php 
 		}

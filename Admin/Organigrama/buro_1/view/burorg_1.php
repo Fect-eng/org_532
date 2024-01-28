@@ -12,7 +12,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-   <script src="../Javascript/orgchart.js"></script>
+   <script src="../orgchart.js"></script>
+
     <style>
         html, body {
             height: 100%;
@@ -60,45 +61,14 @@
               <li><a class="dropdown-item" href="#">Desarrollador</a></li>
             </ul>
           </li>
-
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="cerrar_sesion.php">Cerrar Sesion</a>
           </li>
-
-            <!-- Modal de Confirmación -->
-<div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirmar Cierre de Sesión</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>¿Estás seguro de que deseas cerrar sesión?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-danger" id="confirmarCierre">Cerrar Sesión</button>
-            </div>
-        </div>
-    </div>
-</div>
         </ul>
-        <!--  <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form> -->
-       
       </div>
     </div>
   </div>
 </nav>
-    <!-- Contenido de la página -->
-    <div class="container-fluid">
-        <div class="text-center mb-5">
-            <h1 class="text-dark">Administracion Municipalidad Ciudad Nueva</h1>
-        </div>
-    </div>
 
 <!-- Botón para cerrar sesión con diseño de Bootstrap 
     <div class="container mt-5">
@@ -108,11 +78,36 @@
 -->
     
     <!-- Contenedor para el organigrama  <div id="arbol"></div>-->
+    <style>
+        .TituloPrimary {
+    margin-top: 10px; /* Puedes ajustar el valor según tus preferencias */
+        }
 
+      .container {
+        margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        max-width: 1200px; /** Ancho del contenedor */
+        margin-top: 60px; /* Márgen superior de 10px */
+        margin-bottom: 10px; /* Márgen inferior de 10px */
+        height: 540px; /* Altura de 400px */
+        background-color: #87CEEB; /* Fondo gris cielo */
+        border: 1px solid #333; /* Borde sólido de 2px de grosor, color #333 (negro) */
+        border-radius: 2px; /* Bordes redondeados */
+    }
+    </style>
+
+ <!-- Contenido de la página -->
+ 
+
+    <div class="container" id="ContainerArbol">
+        
     <div class="container-fluid">
-
+        <div class="text-center mb-4">
+            <h3 id="TituloPrimary" class="text-dark">Administracion</h3>
+        </div>
+    </div>
     <div id="arbol"></div>
-
     </div>
     
     <!-- <div id="Data2" class="container-fluid mt-4">-->
@@ -181,11 +176,7 @@
     });
 </script>
 
-
-
-
 <!-- ==================================================== -->
-
 
 <!-- Script para cerrar sesion.php -->
 <script>

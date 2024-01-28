@@ -1,0 +1,24 @@
+git init
+git add -A
+git status
+git commit -m "version 2"
+git remote add origin https://github.com/Fect-eng/Aplicacion_Java_MSR.git
+git push origin master
+
+para actualizar sobre la marcha 
+git add -A
+git status
+git commit -m "version 2"        ***** recordar el commit 
+git push origin master
+
+@FasterMemory123456789
+
+===================================
+
+echo "# Aplicacion_Android_CheckList" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Fect-eng/Aplicacion_Android_CheckList.git
+git push -u origin main

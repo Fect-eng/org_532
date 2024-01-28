@@ -109,12 +109,12 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_1/index.php" id="organoControl_ID">Organo de Control Institucional</a>
+                    <a class="dropdown-item" href="../Oficina_1/" id="organoControl_ID">Organo de Control Institucional</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_2/index.php" id="oficinaPublica_ID">Oficina de Procuraduría Publica Municipal</a>
+                    <a class="dropdown-item" href="../Oficina_2/" id="oficinaPublica_ID">Oficina de Procuraduría Publica Municipal</a>
                 </li>
 
                 <li>
@@ -124,10 +124,10 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_3/index.php" id="oficinaPublica_ID">EF IMAGEN INSTITUCION</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_4/index.php" id="oficinaPublica_ID">EF REGISTRO CIVIL</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_5/index.php" id="oficinaPublica_ID">EF TRAMITE DOCUMENTARIO</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_6/index.php" id="oficinaPublica_ID">EF ARCHIVO CENTRAL</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_3/" id="oficinaPublica_ID">EF IMAGEN INSTITUCION</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_4/" id="oficinaPublica_ID">EF REGISTRO CIVIL</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_5/" id="oficinaPublica_ID">EF TRAMITE DOCUMENTARIO</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_6/" id="oficinaPublica_ID">EF ARCHIVO CENTRAL</a></li>
                     </ul>
                 </li>
             </ul>
@@ -141,42 +141,42 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_7/index.php" id="oficinaPublica_ID">Sub Gerencia de Tecnologías de la Informacion Y Comunicaciones</a>
+                    <a class="dropdown-item" href="../Oficina_7/" id="oficinaPublica_ID">Sub Gerencia de Tecnologías de la Informacion Y Comunicaciones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_8/index.php" id="oficinaPublica_ID">Sub Gerencia de Programacion Multianual de Inversiones</a>
+                    <a class="dropdown-item" href="../Oficina_8/" id="oficinaPublica_ID">Sub Gerencia de Programacion Multianual de Inversiones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_9/index.php" id="oficinaPublica_ID">Sub Gerencia de Supervision de Inversiones</a>
+                    <a class="dropdown-item" href="../Oficina_9/" id="oficinaPublica_ID">Sub Gerencia de Supervision de Inversiones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_10/index.php" id="oficinaPublica_ID">Sub Gerencia de Formulacion de Proyectos</a>
+                    <a class="dropdown-item" href="../Oficina_10/" id="oficinaPublica_ID">Sub Gerencia de Formulacion de Proyectos</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_11/index.php" id="oficinaPublica_ID">Sub Gerencia de Administracion Tributaria</a>
+                    <a class="dropdown-item" href="../Oficina_11/" id="oficinaPublica_ID">Sub Gerencia de Administracion Tributaria</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_12/index.php" id="oficinaPublica_ID">Sub Gerencia de Fizcalizacion</a>
+                    <a class="dropdown-item" href="../Oficina_12/" id="oficinaPublica_ID">Sub Gerencia de Fizcalizacion</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_13/index.php" id="oficinaPublica_ID">Sub Gerencia de Seguridad Ciudadana</a>
+                    <a class="dropdown-item" href="../Oficina_13/" id="oficinaPublica_ID">Sub Gerencia de Seguridad Ciudadana</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_14/index.php" id="oficinaPublica_ID">EF Equipo Mecanico</a>
+                    <a class="dropdown-item" href="../Oficina_14/" id="oficinaPublica_ID">EF Equipo Mecanico</a>
                 </li>
 
             </ul>
@@ -209,18 +209,18 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_15/index.php" id="oficinaPublica_ID">EF PROCESOS ADMINISTRATIVOS DISCIPLINARIOS PAD</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_15/" id="oficinaPublica_ID">EF PROCESOS ADMINISTRATIVOS DISCIPLINARIOS PAD</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_16/index.php" id="oficinaPublica_ID">Sub Gerencia de Contabilidad</a>
+                    <a class="dropdown-item" href="../Oficina_16/" id="oficinaPublica_ID">Sub Gerencia de Contabilidad</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_17/index.php" id="oficinaPublica_ID">Sub Gerencia de Tesoreria</a>
+                    <a class="dropdown-item" href="../Oficina_17/" id="oficinaPublica_ID">Sub Gerencia de Tesoreria</a>
                 </li>
 
                 <li>
@@ -230,8 +230,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_18/index.php" id="oficinaPublica_ID">EF CONTROL PATRIMONIAL</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_19/index.php" id="oficinaPublica_ID">EF ALMACEN</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_18/" id="oficinaPublica_ID">EF CONTROL PATRIMONIAL</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_19/" id="oficinaPublica_ID">EF ALMACEN</a></li>
                         
                     </ul>
                 </li>
@@ -247,12 +247,12 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_20/index.php" id="oficinaPublica_ID">Sub Gerencia de Estudios</a>
+                    <a class="dropdown-item" href="../Oficina_20/" id="oficinaPublica_ID">Sub Gerencia de Estudios</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_21/index.php" id="oficinaPublica_ID">Sub Gerencia de Obras y Mantenimiento</a>
+                    <a class="dropdown-item" href="../Oficina_21/" id="oficinaPublica_ID">Sub Gerencia de Obras y Mantenimiento</a>
                 </li>
 
                 <li>
@@ -262,9 +262,9 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_22/index.php" id="oficinaPublica_ID">EF PLANEAMIENTO URBANO</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_23/index.php" id="oficinaPublica_ID">EF LICENCIAS</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_24/index.php" id="oficinaPublica_ID">EF GESTION DE RIESGOS Y DESASTRES</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_22/" id="oficinaPublica_ID">EF PLANEAMIENTO URBANO</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_23/" id="oficinaPublica_ID">EF LICENCIAS</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_24/" id="oficinaPublica_ID">EF GESTION DE RIESGOS Y DESASTRES</a></li>
                         
                     </ul>
                 </li>
@@ -307,8 +307,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_25/index.php" id="oficinaPublica_ID">E.F. de Gestión Empresarial, Comercialización y Transporte</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_26/index.php" id="oficinaPublica_ID">E.F. de Policía Municipal</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_25/" id="oficinaPublica_ID">E.F. de Gestión Empresarial, Comercialización y Transporte</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_26/" id="oficinaPublica_ID">E.F. de Policía Municipal</a></li>
                         
                     </ul>
                 </li>
@@ -320,11 +320,11 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_27/index.php" id="oficinaPublica_ID">E.F. de Defensoría Municipal del Niño y el Adolescente - DEMUNA</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_28/index.php" id="oficinaPublica_ID">E.F. de Asistencia Alimentaria, Vaso de Leche y Comedores</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_29/index.php" id="oficinaPublica_ID">E.F. de Unidad Local de Empadronamiento - ULE </a></li>
-                        <li><a class="dropdown-item" href="../Oficina_30/index.php" id="oficinaPublica_ID">E.F. de Programas e Inclusión Social</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_31/index.php" id="oficinaPublica_ID">E.F. de Educación, Cultura, Deporte y Participación Vecinal</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_27/" id="oficinaPublica_ID">E.F. de Defensoría Municipal del Niño y el Adolescente - DEMUNA</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_28/" id="oficinaPublica_ID">E.F. de Asistencia Alimentaria, Vaso de Leche y Comedores</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_29/" id="oficinaPublica_ID">E.F. de Unidad Local de Empadronamiento - ULE </a></li>
+                        <li><a class="dropdown-item" href="../Oficina_30/" id="oficinaPublica_ID">E.F. de Programas e Inclusión Social</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_31/" id="oficinaPublica_ID">E.F. de Educación, Cultura, Deporte y Participación Vecinal</a></li>
                     </ul>
                 </li>
 
@@ -335,8 +335,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_32/index.php" id="oficinaPublica_ID">E.F. de Gestión Ambiental y Residuos Solidos</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_33/index.php" id="oficinaPublica_ID">E.F. de Áreas Verdes y Ornato</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_32/" id="oficinaPublica_ID">E.F. de Gestión Ambiental y Residuos Solidos</a></li>
+                        <li><a class="dropdown-item" href="../Oficina_33/" id="oficinaPublica_ID">E.F. de Áreas Verdes y Ornato</a></li>
                         
                     </ul>
                 </li>
@@ -357,7 +357,7 @@
                 color: black !important;
             }
            </style> 
-        <li><a class="dropdown-item" href="../Oficina_34/index.php" id="GerenciaPresupuesto1">Gerencia Presupuesto</a></li>
+        <li><a class="dropdown-item" href="../Oficina_34/" id="GerenciaPresupuesto1">Gerencia Presupuesto</a></li>
 
         
     </ul>

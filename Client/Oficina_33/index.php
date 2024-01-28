@@ -49,18 +49,6 @@
         <h3>Sub Gerencia de Gestion Ambiental</h3>
         <h3>E.F. de Áreas Verdes y Ornato</h3>
       </div>
-     
-
-<div class="container mt-5">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-        Agregar nuevo 
-        <span class="glyphicon glyphicon-plus"></span>
-      </button>
-
-<button class="btn btn-warning" data-toggle="modal" data-target="#modalConfirmacion">
-      Actualizar Página
-      <span class="glyphicon glyphicon-plus"></span>
-</button>
 
 <!-- Modal de Confirmación -->
 <div class="modal fade" id="modalConfirmacion" tabindex="-1" role="dialog" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
