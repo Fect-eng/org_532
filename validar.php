@@ -12,7 +12,7 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']==1){ //administrador
-    header("Location:Admin/Oficina_1/index.php");  
+    header("Location:Admin/Oficina_1/");  
     // header("Location:Admin/Oficina_1/index.php");  
     // admin.php
     // si se requiere cambiar la ruta de ubicacion. 
@@ -20,7 +20,7 @@ if($filas['id_cargo']==1){ //administrador
 
 }else
 if($filas['id_cargo']==2){ //cliente
-header("location:Client/Oficina_1/index.php");
+header("location:Client/Oficina_1/");
 // header("location:cliente.php"); prueba exitosa
 }
 else{

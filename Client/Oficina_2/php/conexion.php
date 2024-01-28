@@ -1,6 +1,6 @@
 <?php 
-	function conexion(){
-		$servidor = "localhost";
+function conexion(){
+	$servidor = "localhost";
 		$usuario = "root";
 		$password = "";
 		$bd = "rol";

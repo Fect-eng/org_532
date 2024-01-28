@@ -1,6 +1,7 @@
 <?php 
-	function conexion(){
-		$servidor = "localhost";
+
+function conexion(){
+	$servidor = "localhost";
 		$usuario = "root";
 		$password = "";
 		$bd = "rol";
@@ -12,6 +13,7 @@
 		*$password="@FasterMemory1";
 		*$bd="id21764780_managdb_pr";
 		 */
+
 		
 		$conexion = mysqli_connect($servidor, $usuario, $password, $bd);
 
