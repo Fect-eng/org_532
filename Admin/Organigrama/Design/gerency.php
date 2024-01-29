@@ -12,7 +12,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-   <script src="../orgchart.js"></script>
+   <script src="orgchart.js"></script>
 
     <style>
         html, body {
@@ -29,7 +29,7 @@
 </head>
 <body>
     <!-- Navbar de Bootstrap 5 con clases fixed-top y bg-dark -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ciudad Nueva!!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -42,23 +42,21 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Help</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="manager_client.php">Ajustes</a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Seleccion
+              Organigrama
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action 1</a></li>
-              <li><a class="dropdown-item" href="#">Action 2</a></li>
+              <li><a class="dropdown-item" href="gerency.php">GERENCIA PRINCIPAL</a></li>
+              <li><a class="dropdown-item" href="alcaldia.php">ALCALDIA</a></li>
+              <li><a class="dropdown-item" href="admini.php">GERENCIA DE  ADMINISTRACION</a></li>
+              <li><a class="dropdown-item" href="infra.php">GERENCIA DE INFRAESTRUCTURA Y DESARROLLO URBANO</a></li>
+              <li><a class="dropdown-item" href="social.php">GERENCIA DE DESARROLLO ECONOMICO SOCIAL</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Desarrollador</a></li>
+              <li><a class="dropdown-item" href="../../Oficina_1/">Principal</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -87,7 +85,7 @@
         margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         padding: 10px;
-        max-width: 1200px; /** Ancho del contenedor */
+        max-width: 1450px; /** Ancho del contenedor */
         margin-top: 60px; /* Márgen superior de 10px */
         margin-bottom: 10px; /* Márgen inferior de 10px */
         height: 540px; /* Altura de 400px */
@@ -104,38 +102,34 @@
         
     <div class="container-fluid">
         <div class="text-center mb-4">
-            <h3 id="TituloPrimary" class="text-dark">Administracion</h3>
+            <h3 id="TituloPrimary" class="text-dark">Gerencia - Municipalidad Ciudad Nueva</h3>
         </div>
     </div>
     <div id="arbol"></div>
     </div>
     
     <!-- <div id="Data2" class="container-fluid mt-4">-->
-    
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Datos estáticos con 8 elementos
         var datosEstaticos = [
-            { id: 1, nombres: "Alcaldia", gerencia: "Gerencia1" },
-            { id: 2, nombres: "Organo de Control Institucional", gerencia: "Subgerencia", pid: 1 },
-            { id: 3, nombres: "Oficina de Procuraduría Publica Municipal", gerencia: "Subgerencia", pid: 1 },
-            { id: 4, nombres: "Sub Gerencia de Secretaria General", gerencia: "Subgerencia", pid: 1 },
-            { id: 5, nombres: "EF IMAGEN INSTITUCION", gerencia: "Subgerencia", pid: 4 }, // Subnodo 1
-            { id: 6, nombres: "EF REGISTRO CIVIL", gerencia: "Subgerencia", pid: 4 }, // Subnodo 2
-            { id: 7, nombres: "EF TRAMITE DOCUMENTARIO", gerencia: "Subgerencia", pid: 4 }, // Subnodo 3
-            { id: 8, nombres: "EF ARCHIVO CENTRAL", gerencia: "Subgerencia", pid: 4 }  // Subnodo 4
+            { id: 1, nombres: "Alcaldia", gerencia: "Municipalidad Ciudad Nueva", url: "https://www.ejemplo.com/pagina1" },
+            { id: 2, nombres: "GERENCIA MUNICIPAL", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina2" },
+            { id: 3, nombres: "GERENCIA DE  ADMINISTRACION", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina3" },
+            { id: 4, nombres: "GERENCIA DE ASESORIA JURIDICA", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina4" },
+            { id: 5, nombres: "GERENCIA DE PLANEAMIENTO, PRESUPUESTO Y MODERNIZACION INSTITUCIONAL", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina5" },
+            { id: 6, nombres: "GERENCIA DE INFRAESTRUCTURA Y DESARROLLO URBANO", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina6" },
+            { id: 7, nombres: "GERENCIA DE DESARROLLO ECONOMICO SOCIAL", gerencia: "Alcaldia", pid: 1, url: "https://www.ejemplo.com/pagina7" },
+            //{ id: 8, nombres: "EF ARCHIVO CENTRAL", gerencia: "Subgerencia", pid: 4, url: "https://www.ejemplo.com/pagina8" }
         ];
 
         var chart = new OrgChart(document.getElementById("arbol"), {
-            template: "isla",
+            template: "ana",
             enableSearch: true,
             mouseScroll: OrgChart.action.zoom,
             layout: function (sender, nodeOptions, node) {
                 if (node.pid === 4) {
-                    // Si el nodo tiene pid: 4, usar treeDown para disposición vertical
                     return OrgChart.treeDown;
                 } else {
-                    // Para otros nodos, usar el diseño predeterminado (tree)
                     return OrgChart.tree;
                 }
             },
@@ -144,36 +138,40 @@
                 field_1: "gerencia"
             },
             nodes: datosEstaticos,
-            parentNodeSymbol: 'fas fa-angle-double-right',
-            drag: {
-                autoScroll: true,
-                preventVoidMoves: true,
-                dragStart: function (node, e) {
-                    return node.children.length === 0;
-                },
-                dragEnter: function (node, sourceNode) {
-                    return node.children.length === 0;
-                }
+        parentNodeSymbol: 'fas fa-angle-double-right',
+        drag: {
+            autoScroll: true,
+            preventVoidMoves: true,
+            dragStart: function (node, e) {
+                return node.children.length === 0;
             },
-            pan: {
-                toggle: true
-            },
-            alignment: OrgChart.ORIENTATION
-        });
-
-        // Permitir el movimiento de nodos
-        chart.dragDrop = true;
-
-        // Evento que se dispara al soltar un nodo
-        chart.on('drop', function (sender, source, target) {
-            // Realizar aquí la lógica necesaria al soltar un nodo
-            console.log('Nodo soltado:', source.id, 'en', target.id);
-        });
-
-        // Habilitar el zoom
-        chart.zoomIn = OrgChart.action.zoomIn;
-        chart.zoomOut = OrgChart.action.zoomOut;
+            dragEnter: function (node, sourceNode) {
+                return node.children.length === 0;
+            }
+        },
+        pan: {
+            toggle: true
+        },
+        alignment: OrgChart.ORIENTATION,
+        nodeContent: function(sender, node, buttons, fields){
+            var content = sender._super.nodeContent(sender, node, buttons, fields);
+            content.innerHTML = `<div style="line-height: ${sender._options.nodeSize[1]}px; text-align: center;">${node.nombres}</div>`;
+            return content;
+        },
+        nodeClick: function(sender, node) {
+            // Manejar el evento de clic en el nodo
+            if (node.url) {
+                window.location.href = node.url;
+            }
+        }
     });
+
+    chart.dragDrop = true;
+    chart.zoomIn = OrgChart.action.zoomIn;
+    chart.zoomOut = OrgChart.action.zoomOut;
+
+    
+});
 </script>
 
 <!-- ==================================================== -->

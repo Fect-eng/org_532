@@ -1,38 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama</title>
+    <!-- Enlaces a los archivos CSS y JS de Bootstrap y jQuery desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-<style>
-.custom-dropdown-menu {
-    background-color: #3498db; /* Cambia el color de fondo según tu preferencia */
-}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<style>
-    /* Estilo para las letras de color blanco en los dropdown-items
-    .dropdown-item {
-        color: white !important;
-    } */
+   <script src="orgchart.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
 
-    /* Estilo para las letras de color negro al pasar el puntero en los dropdown-items 
-    .dropdown-item:hover {
-        color: black !important;
-        background-color: #fff; /* Cambia el fondo al pasar el puntero si es necesario 
-    } **/
-</style>
-
-<style>
-   .dropdown-item {
-    color: white !important; /* Color de las letras */
-                  }
-
-    .dropdown-item:hover {
-    color: Black !important; /* Color de las letras al pasar el puntero */
-    background-color: #333; /* Color de fondo al pasar el puntero */
-                         }
-</style>                 
-
-<!-- Navbar de Bootstrap 5 con clases fixed-top y bg-dark -->
+        #tree {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    
 <nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">Ciudad Nueva!!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,22 +41,27 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <!--  <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Help</a>
-          </li> -->
-         <!-- <li class="nav-item">
-            <a class="nav-link" href="admin.php">Organigrama</a>
-          </li>  -->
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Organigrama
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../../../Design/gerency.php">GERENCIA PRINCIPAL</a></li>
+              <li><a class="dropdown-item" href="../../../Design/alcaldia.php">ALCALDIA</a></li>
+              <li><a class="dropdown-item" href="../../../Design/admini.php">GERENCIA DE  ADMINISTRACION</a></li>
+              <li><a class="dropdown-item" href="../../../Design/infra.php">GERENCIA DE INFRAESTRUCTURA Y DESARROLLO URBANO</a></li>
+              <li><a class="dropdown-item" href="../../../Design/social.php">GERENCIA DE DESARROLLO ECONOMICO SOCIAL</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="../../Oficina_1/">Principal</a></li>
+            </ul>
+          </li>
 
-          <style>
-    .custom-dropdown-menu {
-        background-color: #343a40; /* Puedes cambiar el color a uno de tu elección */
-    }
-</style>
-
-<li class="nav-item dropdown">
+          <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Directorio
+        Visualizar Directorio Grafico
     </a>
     <ul class="dropdown-menu dropdown-menu-dark custom-dropdown-menu">
         <!-- <li><a class="dropdown-item" href="../Organigrama/buro1.php">Alcaldia Organigrama</a></li> -->
@@ -109,12 +111,12 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_1/index.php" id="organoControl_ID">Organo de Control Institucional</a>
+                    <a class="dropdown-item" href="../../buro_1/view/burorg_1.php" id="organoControl_ID">Organo de Control Institucional</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_2/index.php" id="oficinaPublica_ID">Oficina de Procuraduría Publica Municipal</a>
+                    <a class="dropdown-item" href="../../buro_2/view/burorg_2.php" id="oficinaPublica_ID">Oficina de Procuraduría Publica Municipal</a>
                 </li>
 
                 <li>
@@ -124,10 +126,10 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_3/index.php" id="oficinaPublica_ID">EF IMAGEN INSTITUCION</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_4/index.php" id="oficinaPublica_ID">EF REGISTRO CIVIL</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_5/index.php" id="oficinaPublica_ID">EF TRAMITE DOCUMENTARIO</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_6/index.php" id="oficinaPublica_ID">EF ARCHIVO CENTRAL</a></li>
+                        <li><a class="dropdown-item" href="../../buro_3/view/burorg_3.php" id="oficinaPublica_ID">EF IMAGEN INSTITUCION</a></li>
+                        <li><a class="dropdown-item" href="../../buro_4/view/burorg_4.php" id="oficinaPublica_ID">EF REGISTRO CIVIL</a></li>
+                        <li><a class="dropdown-item" href="../../buro_5/view/burorg_5.php" id="oficinaPublica_ID">EF TRAMITE DOCUMENTARIO</a></li>
+                        <li><a class="dropdown-item" href="../../buro_6/view/burorg_6.php" id="oficinaPublica_ID">EF ARCHIVO CENTRAL</a></li>
                     </ul>
                 </li>
             </ul>
@@ -141,42 +143,42 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_7/index.php" id="oficinaPublica_ID">Sub Gerencia de Tecnologías de la Informacion Y Comunicaciones</a>
+                    <a class="dropdown-item" href="../../buro_7/view/burorg_7.php" id="oficinaPublica_ID">Sub Gerencia de Tecnologías de la Informacion Y Comunicaciones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_8/index.php" id="oficinaPublica_ID">Sub Gerencia de Programacion Multianual de Inversiones</a>
+                    <a class="dropdown-item" href="../../buro_8/view/burorg_8.php" id="oficinaPublica_ID">Sub Gerencia de Programacion Multianual de Inversiones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_9/index.php" id="oficinaPublica_ID">Sub Gerencia de Supervision de Inversiones</a>
+                    <a class="dropdown-item" href="../../buro_9/view/burorg_9.php" id="oficinaPublica_ID">Sub Gerencia de Supervision de Inversiones</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_10/index.php" id="oficinaPublica_ID">Sub Gerencia de Formulacion de Proyectos</a>
+                    <a class="dropdown-item" href="../../buro_10/view/burorg_10.php" id="oficinaPublica_ID">Sub Gerencia de Formulacion de Proyectos</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_11/index.php" id="oficinaPublica_ID">Sub Gerencia de Administracion Tributaria</a>
+                    <a class="dropdown-item" href="../../buro_11/view/burorg_11.php" id="oficinaPublica_ID">Sub Gerencia de Administracion Tributaria</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_12/index.php" id="oficinaPublica_ID">Sub Gerencia de Fizcalizacion</a>
+                    <a class="dropdown-item" href="../../buro_12/view/burorg_12.php" id="oficinaPublica_ID">Sub Gerencia de Fizcalizacion</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_13/index.php" id="oficinaPublica_ID">Sub Gerencia de Seguridad Ciudadana</a>
+                    <a class="dropdown-item" href="../../buro_13/view/burorg_13.php" id="oficinaPublica_ID">Sub Gerencia de Seguridad Ciudadana</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_14/index.php" id="oficinaPublica_ID">EF Equipo Mecanico</a>
+                    <a class="dropdown-item" href="../../buro_14/view/burorg_14.php" id="oficinaPublica_ID">EF Equipo Mecanico</a>
                 </li>
 
             </ul>
@@ -209,18 +211,18 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_15/index.php" id="oficinaPublica_ID">EF PROCESOS ADMINISTRATIVOS DISCIPLINARIOS PAD</a></li>
+                        <li><a class="dropdown-item" href="../../buro_15/view/burorg_15.php" id="oficinaPublica_ID">EF PROCESOS ADMINISTRATIVOS DISCIPLINARIOS PAD</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_16/index.php" id="oficinaPublica_ID">Sub Gerencia de Contabilidad</a>
+                    <a class="dropdown-item" href="../../buro_16/view/burorg_16.php" id="oficinaPublica_ID">Sub Gerencia de Contabilidad</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_17/index.php" id="oficinaPublica_ID">Sub Gerencia de Tesoreria</a>
+                    <a class="dropdown-item" href="../../buro_17/view/burorg_17.php" id="oficinaPublica_ID">Sub Gerencia de Tesoreria</a>
                 </li>
 
                 <li>
@@ -230,8 +232,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_18/index.php" id="oficinaPublica_ID">EF CONTROL PATRIMONIAL</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_19/index.php" id="oficinaPublica_ID">EF ALMACEN</a></li>
+                        <li><a class="dropdown-item" href="../../buro_18/view/burorg_18.php" id="oficinaPublica_ID">EF CONTROL PATRIMONIAL</a></li>
+                        <li><a class="dropdown-item" href="../../buro_19/view/burorg_19.php" id="oficinaPublica_ID">EF ALMACEN</a></li>
                         
                     </ul>
                 </li>
@@ -247,12 +249,12 @@
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_20/index.php" id="oficinaPublica_ID">Sub Gerencia de Estudios</a>
+                    <a class="dropdown-item" href="../../buro_20/view/burorg_20.php" id="oficinaPublica_ID">Sub Gerencia de Estudios</a>
                 </li>
 
                 <li>
                     <!-- Enlace directo para "Oficina de Procuraduría Publica Municipal" -->
-                    <a class="dropdown-item" href="../Oficina_21/index.php" id="oficinaPublica_ID">Sub Gerencia de Obras y Mantenimiento</a>
+                    <a class="dropdown-item" href="../../buro_21/view/burorg_21.php" id="oficinaPublica_ID">Sub Gerencia de Obras y Mantenimiento</a>
                 </li>
 
                 <li>
@@ -262,9 +264,9 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_22/index.php" id="oficinaPublica_ID">EF PLANEAMIENTO URBANO</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_23/index.php" id="oficinaPublica_ID">EF LICENCIAS</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_24/index.php" id="oficinaPublica_ID">EF GESTION DE RIESGOS Y DESASTRES</a></li>
+                        <li><a class="dropdown-item" href="../../buro_22/view/burorg_22.php" id="oficinaPublica_ID">EF PLANEAMIENTO URBANO</a></li>
+                        <li><a class="dropdown-item" href="../../buro_23/view/burorg_23.php" id="oficinaPublica_ID">EF LICENCIAS</a></li>
+                        <li><a class="dropdown-item" href="../../buro_24/view/burorg_24.php" id="oficinaPublica_ID">EF GESTION DE RIESGOS Y DESASTRES</a></li>
                         
                     </ul>
                 </li>
@@ -307,8 +309,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_25/index.php" id="oficinaPublica_ID">E.F. de Gestión Empresarial, Comercialización y Transporte</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_26/index.php" id="oficinaPublica_ID">E.F. de Policía Municipal</a></li>
+                        <li><a class="dropdown-item" href="../../buro_25/view/burorg_25.php" id="oficinaPublica_ID">E.F. de Gestión Empresarial, Comercialización y Transporte</a></li>
+                        <li><a class="dropdown-item" href="../../buro_26/view/burorg_26.php" id="oficinaPublica_ID">E.F. de Policía Municipal</a></li>
                         
                     </ul>
                 </li>
@@ -320,11 +322,11 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_27/index.php" id="oficinaPublica_ID">E.F. de Defensoría Municipal del Niño y el Adolescente - DEMUNA</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_28/index.php" id="oficinaPublica_ID">E.F. de Asistencia Alimentaria, Vaso de Leche y Comedores</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_29/index.php" id="oficinaPublica_ID">E.F. de Unidad Local de Empadronamiento - ULE </a></li>
-                        <li><a class="dropdown-item" href="../Oficina_30/index.php" id="oficinaPublica_ID">E.F. de Programas e Inclusión Social</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_31/index.php" id="oficinaPublica_ID">E.F. de Educación, Cultura, Deporte y Participación Vecinal</a></li>
+                        <li><a class="dropdown-item" href="../../buro_27/view/burorg_27.php" id="oficinaPublica_ID">E.F. de Defensoría Municipal del Niño y el Adolescente - DEMUNA</a></li>
+                        <li><a class="dropdown-item" href="../../buro_28/view/burorg_28.php" id="oficinaPublica_ID">E.F. de Asistencia Alimentaria, Vaso de Leche y Comedores</a></li>
+                        <li><a class="dropdown-item" href="../../buro_29/view/burorg_29.php" id="oficinaPublica_ID">E.F. de Unidad Local de Empadronamiento - ULE </a></li>
+                        <li><a class="dropdown-item" href="../../buro_30/view/burorg_30.php" id="oficinaPublica_ID">E.F. de Programas e Inclusión Social</a></li>
+                        <li><a class="dropdown-item" href="../../buro_31/view/burorg_31.php" id="oficinaPublica_ID">E.F. de Educación, Cultura, Deporte y Participación Vecinal</a></li>
                     </ul>
                 </li>
 
@@ -335,8 +337,8 @@
                     </button>
                     <!-- Este menú será desplegable -->
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../Oficina_32/index.php" id="oficinaPublica_ID">E.F. de Gestión Ambiental y Residuos Solidos</a></li>
-                        <li><a class="dropdown-item" href="../Oficina_33/index.php" id="oficinaPublica_ID">E.F. de Áreas Verdes y Ornato</a></li>
+                        <li><a class="dropdown-item" href="../../buro_32/view/burorg_32.php" id="oficinaPublica_ID">E.F. de Gestión Ambiental y Residuos Solidos</a></li>
+                        <li><a class="dropdown-item" href="../../buro_33/view/burorg_33.php" id="oficinaPublica_ID">E.F. de Áreas Verdes y Ornato</a></li>
                         
                     </ul>
                 </li>
@@ -357,7 +359,7 @@
                 color: black !important;
             }
            </style> 
-        <li><a class="dropdown-item" href="../Oficina_34/index.php" id="GerenciaPresupuesto1">Gerencia Presupuesto</a></li>
+        <li><a class="dropdown-item" href="../../buro_34/view/burorg_34.php" id="GerenciaPresupuesto1">Gerencia Presupuesto</a></li>
 
         
     </ul>
@@ -450,37 +452,137 @@
         event.stopPropagation();
     });
 </script>
-
-<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Organigrama
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="../Organigrama/Design/gerency.php">GERENCIA PRINCIPAL</a></li>
-              <li><a class="dropdown-item" href="../Organigrama/Design/alcaldia.php">ALCALDIA</a></li>
-              <li><a class="dropdown-item" href="../Organigrama/Design/admini.php">GERENCIA DE  ADMINISTRACION</a></li>
-              <li><a class="dropdown-item" href="../Organigrama/Design/infra.php">GERENCIA DE INFRAESTRUCTURA Y DESARROLLO URBANO</a></li>
-              <li><a class="dropdown-item" href="../Organigrama/Design/social.php">GERENCIA DE DESARROLLO ECONOMICO SOCIAL</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Desarrollador</a></li>
-            </ul>
-          </li>
-
-          
-
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../cerrar_sesion.php">Cerrar Sesion</a>
+            <a class="nav-link active" aria-current="page" href="cerrar_sesion.php">Cerrar Sesion</a>
           </li>
-
         </ul>
-        <!--  <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form> -->
-       
       </div>
     </div>
   </div>
 </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container-fluid">
+        <div class="text-center mb-5">
+            <h1 class="text-dark">Administracion Municipalidad Ciudad Nueva</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+    <div id="arbol"></div>
+
+    </div>
+    
+    <!-- <div id="Data2" class="container-fluid mt-4">-->
+    
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    // Utilizar una promesa para obtener datos antes de crear el organigrama
+    obtenerDatos().then(function (datos) {
+        // Ordenar los datos por ID de manera ascendente
+        datos.sort(function (a, b) {
+            return a.id - b.id;
+        });
+
+        // Agregar la propiedad 'direction' a cada nodo
+        datos.forEach(function (node, index) {
+            if (index < 10) {
+                node.direction = 'H'; // Primeros 10 nodos, alineación horizontal
+            } else {
+                node.direction = 'V'; // Resto de los nodos, alineación vertical
+            }
+        });
+
+        var chart = new OrgChart(document.getElementById("arbol"), {
+            template: "ana",
+            enableSearch: true,
+            mouseScroll: OrgChart.action.zoom,
+            layout: function (sender, nodeOptions, node) {
+                if (node.direction === 'H') {
+                    // Primeros 10 nodos, alineación horizontal
+                    return OrgChart.treeLeft;
+                } else {
+                    // Subnodos, alineación vertical
+                    return OrgChart.treeDown; // O puedes usar OrgChart.treeUp según tus preferencias
+                }
+            },
+            nodeBinding: {
+                field_0: "nombres",
+                field_1: "gerencia"
+            },
+            nodes: datos,
+            parentNodeSymbol: 'fas fa-angle-double-right',
+            drag: {
+                autoScroll: true,
+                preventVoidMoves: true,
+                dragStart: function (node, e) {
+                    return node.children.length === 0;
+                },
+                dragEnter: function (node, sourceNode) {
+                    return node.children.length === 0;
+                }
+            },
+            pan: {
+                toggle: true
+            },
+            alignment: OrgChart.ORIENTATION,
+        });
+
+        // Permitir el movimiento de nodos
+        chart.dragDrop = true;
+
+        // Evento que se dispara al soltar un nodo
+        chart.on('drop', function (sender, source, target) {
+            // Realizar aquí la lógica necesaria al soltar un nodo
+            console.log('Nodo soltado:', source.id, 'en', target.id);
+        });
+
+        // Habilitar el zoom
+        chart.zoomIn = OrgChart.action.zoomIn;
+        chart.zoomOut = OrgChart.action.zoomOut;
+    }).catch(function (error) {
+        console.error("Error al obtener datos:", error);
+    });
+});
+
+// Función para obtener datos de la base de datos
+function obtenerDatos() {
+    // Retorna una promesa que resuelve con los datos obtenidos
+    return new Promise(function (resolve, reject) {
+        // Realiza una llamada AJAX con fetch para obtener datos desde obtener_datos.php
+        fetch('obtener_datos.php')
+            .then(response => response.json())
+            .then(data => resolve(data))
+            .catch(error => reject(error));
+    });
+}
+    </script>
+<!-- ==================================================== -->
+
+
+<!-- Script para cerrar sesion.php -->
+<script>
+    $(document).ready(function () {
+        // Manejar el evento de clic en el botón "Cerrar Sesión" del modal
+        $('#confirmarCierre').on('click', function () {
+            // Realizar una redirección a cerrar_sesion.php o ejecutar otra acción
+            window.location.href = 'cerrar_sesion.php'; // Reemplaza con la ruta correcta
+
+            // Si prefieres hacer una solicitud AJAX para cerrar la sesión, puedes hacerlo aquí
+            // Ejemplo:
+            /*
+            $.ajax({
+                url: 'cerrar_sesion.php',
+                method: 'POST',
+                success: function (response) {
+                    // Realizar acciones adicionales si es necesario
+                }
+            });
+            */
+        });
+    });
+</script>
+
+</body>
+</html> 

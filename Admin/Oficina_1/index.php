@@ -38,7 +38,7 @@
 <body>
 
 <!-- aca colocais tu nav -->
-<div class="container">
+    <div class="container">
             <div class="container" id="nav"></div>
     </div>
 <!-- este boton es de la parte debajo del nav de navegacion, podras crear nuevo usuario si se requiere 

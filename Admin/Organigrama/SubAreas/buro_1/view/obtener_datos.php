@@ -5,9 +5,6 @@ $username = "root";
 $password = "";
 $dbname = "rol";
 
-// revisado 09/01/2024 
-
-
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -16,7 +13,7 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 
-$query = "SELECT id, pid, nombres, cargo, gerencia, base, dni, telefono, profesion, lugar_DNI, obs FROM org_data";
+$query = "SELECT id, pid, nombres, cargo, gerencia, base, dni, telefono, profesion, lugar_DNI, obs FROM buro_1";
 $result = $conn->query($query);
 
 // Obtener los resultados como un array
